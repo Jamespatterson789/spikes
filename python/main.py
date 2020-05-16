@@ -38,12 +38,23 @@ def foobar_example():
             3. if it is the 98 occurance (count) print "98 g!"
     '''
 
-    name1 = "sam"
-    name2 = "Mike"
-    name3 = "James"
+    # name1 = "sam"
+    # name2 = "Mike"
+    # name3 = "James"
+    # name4 = "foogazi"
 
-    print(name1, name2, name3)
+    # print(name1, name2, name3)
 
+   random_names = [
+       "foogazi",
+       "foogazi",
+       "foogazi",
+       "foogazi",
+       "foogazi",
+   ]
+    
+    for i in range(90):
+       print(i)
         
 
 if __name__ == "__main__":

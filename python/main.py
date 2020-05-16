@@ -54,7 +54,11 @@ def foobar_example():
    ]
     
     for i in range(90):
-       print(i)
+        # string interpolation
+        name = "person-{}".format(i)
+        print(i)
+        name = "person-{}".format(i)
+        random_names.append(name)
         
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-
+import random
 # this is a comment
 def run_test_1():
     # integer
@@ -45,21 +45,27 @@ def foobar_example():
 
     # print(name1, name2, name3)
 
-   random_names = [
-       "foogazi",
-       "foogazi",
-       "foogazi",
-       "foogazi",
-       "foogazi",
+    random_names = [
+        "foogazi",
+        "foogazi",
+        "foogazi",
+        "foogazi",
+        "foogazi",
    ]
     
-    for i in range(90):
+    for i in range(95):
         # string interpolation
         name = "person-{}".format(i)
-        print(i)
-        name = "person-{}".format(i)
-        random_names.append(name)
         
+        random_names.append(name)
+    random.shuffle(random_names)
+    for i, name in enumerate(random_names):
+        if name == "foogazi":
+            print("found it foogazi")
+
+        if i == 98: 
+            print("98 g!")    
+
 
 if __name__ == "__main__":
     # run_test_1()
